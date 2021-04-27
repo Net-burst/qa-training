@@ -1,6 +1,6 @@
 package com.globallogic.qa.training.functional.model
 
-class Response {
+class Greeting {
 
     Long id
     String greeting
