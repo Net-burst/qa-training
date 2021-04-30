@@ -21,6 +21,6 @@ class GreetingController {
 
     @GetMapping("/greeting")
     Greeting getGreeting(@RequestParam(value = "name", defaultValue = "Anonymous") String name) {
-        return new Greeting(id: counter.incrementAndGet(), greeting: "Hello, $name", quote: quoteService.getQuote())
+        return new Greeting(id: counter.incrementAndGet(), greeting: "Hello, Anonymous", quote: quoteService.getQuote())
     }
 }
