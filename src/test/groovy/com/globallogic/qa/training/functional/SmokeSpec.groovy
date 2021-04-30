@@ -37,6 +37,8 @@ class SmokeSpec extends BaseSpec {
         Greeting response = qaService.getGreeting(name)
 
         then: "Response should contain Hello"
-        assert false
+        assert response.id
+        assert response.greeting == "Hello, $name"
+        assert response.quote == quoteString
     }
 }
